@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  --color-dark-gray: #1f2937;
+  --color-light-gray: #d5d4d8;
+  --color-gray: #2f3e53;
+  --color-gray-2: #273549;
+  --color-white: #ffffff;
+  --color-green: #10b981;
+  --color-green-2: #55f991;
+}
+
+button,
+input {
+  display: block;
+}
