@@ -32,6 +32,12 @@
           <p class="pass-gen__body">Never use an insecure password again.</p>
 
           <form class="pass-gen__form" data-form>
+            <label class="pass-gen__label" for="length">Length</label>
+            <input id="length" type="number" name="length" value="15" />
+            <label class="pass-gen__label" for="symbols">Symbols</label>
+            <input id="symbols" type="checkbox" name="symbols" checked="true" />
+            <label class="pass-gen__label" for="numbers">Numbers</label>
+            <input id="numbers" type="checkbox" name="numbers" checked="true" />
             <button type="submit" class="btn">Generate passwords</button>
           </form>
         </header>
