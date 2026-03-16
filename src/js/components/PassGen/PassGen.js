@@ -1,4 +1,4 @@
-import { CHARS } from "./constants.js";
+import { LETTERS, SYMBOLS, NUMBERS } from "./constants.js";
 import { genPasswords } from "./utils.js";
 
 export default function PassGen(root) {
@@ -10,7 +10,15 @@ export default function PassGen(root) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const passwords = genPasswords(CHARS);
+    const formData = new FormData(e.target);
+
+    const config = {
+      length: formData.get("length"),
+      useSymbols: formData.get("symbols"),
+      useNumbers: formData.get("numbers"),
+    };
+
+    const passwords = genPasswords(config, LETTERS, SYMBOLS, NUMBERS);
 
     renderPasswords(passwords);
   }

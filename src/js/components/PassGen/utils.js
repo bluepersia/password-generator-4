@@ -1,21 +1,32 @@
-import { LENGTH } from "./constants.js";
+function getRandomChar(config, letters, symbols, numbers) {
+  const chars = [...letters];
 
-function getRandomChar(chars) {
+  if (config.useSymbols) {
+    chars.push(...symbols);
+  }
+
+  if (config.useNumbers) {
+    chars.push(...numbers);
+  }
+
   return chars[Math.floor(Math.random() * chars.length)];
 }
 
-function genRandomPassword(chars) {
+function genRandomPassword(config, letters, symbols, numbers) {
   let result = "";
 
-  for (let i = 0; i < LENGTH; i++) {
-    result += getRandomChar(chars);
+  for (let i = 0; i < config.length; i++) {
+    result += getRandomChar(config, letters, symbols, numbers);
   }
 
   return result;
 }
 
-function genPasswords(chars) {
-  return [genRandomPassword(chars), genRandomPassword(chars)];
+function genPasswords(config, letters, symbols, numbers) {
+  return [
+    genRandomPassword(config, letters, symbols, numbers),
+    genRandomPassword(config, letters, symbols, numbers),
+  ];
 }
 
 export { genPasswords };

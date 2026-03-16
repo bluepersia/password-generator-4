@@ -1,4 +1,4 @@
-const CHARS = [
+const LETTERS = [
   "A",
   "B",
   "C",
@@ -51,16 +51,8 @@ const CHARS = [
   "x",
   "y",
   "z",
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
+];
+const SYMBOLS = [
   "~",
   "`",
   "!",
@@ -92,6 +84,6 @@ const CHARS = [
   "/",
 ];
 
-const LENGTH = 15;
+const NUMBERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-export { CHARS, LENGTH };
+export { LETTERS, SYMBOLS, NUMBERS };
