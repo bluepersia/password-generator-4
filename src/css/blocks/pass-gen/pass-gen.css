@@ -1,0 +1,50 @@
+.pass-gen {
+  padding: 7.18em 3.25em;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.pass-gen__header {
+  padding-bottom: 2.18em;
+  border-bottom: solid 1px var(--color-gray);
+}
+
+.pass-gen__title {
+  color: var(--color-white);
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+}
+
+.pass-gen__title-highlight {
+  color: var(--color-green);
+}
+
+.pass-gen__body {
+  color: var(--color-light-gray);
+  font-size: 1.25rem;
+  margin-bottom: 2.55em;
+}
+
+.pass-gen__output {
+  padding-top: 2.18em;
+}
+
+.pass-gen__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pass-gen__password {
+  background-color: var(--color-gray-2);
+  color: var(--color-green-2);
+  font-weight: 500;
+  width: 13em;
+  height: 2.43em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.375em;
+}
