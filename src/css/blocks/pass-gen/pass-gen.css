@@ -26,6 +26,10 @@
   margin-bottom: 2.55em;
 }
 
+.pass-gen__label {
+  color: var(--color-white);
+}
+
 .pass-gen__output {
   padding-top: 2.18em;
 }
